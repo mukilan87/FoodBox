@@ -1,12 +1,14 @@
 .container{
-  text-align: center;
-  
+  text-align: right
 }
-.content{margin: 3cm;
+.content{
+  margin: 2cm;
   background-image: url("/assets/images/chefwithphone.jpg");
   background-position:center;
     background-repeat: no-repeat;
-    background-size: 10cm;
-    padding: 50px;
-    background-position: 4.2cm;
+    background-size: 20cm;
+ background-position: 200px;  
+ border-style: groove;
+  padding: 100px;
+  background-color: rgb(96, 177, 177);
 }
