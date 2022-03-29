@@ -1,0 +1,15 @@
+<div class = "main">
+    
+<div class="container col-md-5 offset-md-4 shadow-lg p-5">
+<h1>ADMIN PORTAL</h1>
+<form (ngSubmit)="loginSubmit()">
+    
+    <h2> <i class="fa fa-user-secret" style="font-size:24px"></i> Username</h2>
+    <input [(ngModel)]="loginData.username" name="username" type="username" id="defaultForm-username" class="form-control validate"><br>
+    <h2><i class="fa fa-keyboard-o" style="font-size:24px"></i> Password </h2>
+    <input [(ngModel)]="loginData.password" name="password" type="password" id="defaultForm-pass" class="form-control validate"><br>
+    <button type="submit" class="btn btn-success"><i class="fa fa-sign-in fa-lg"></i> Login</button><br>
+    <h5 *ngIf="error!=''">{{error}}</h5>
+</form>
+</div>
+</div>

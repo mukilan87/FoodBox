@@ -1,0 +1,61 @@
+.logo{
+    position:relative;
+    top: 8px;
+    height: 40px;
+    width: 52px;
+    cursor: pointer;
+}
+.header-title{
+    position: relative;
+    top: 8px;
+    left:25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 32px;
+    color: #bf1e2e;
+}
+.btnHead{
+    margin-left: 10px;
+}
+
+.active, .btnHead:hover{
+    color: #111111;
+}
+
+hr{
+    margin: 0;
+}
+.prodLogo{
+    position: relative;
+    top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-control{
+    width:30%;
+    margin: 10px 0;
+}
+.userbtn{
+    background-color: rgb(190, 149, 45);
+    color: white;
+}
+.purchasebtn{
+    background-color: rgb(190, 149, 45);
+    color: white;
+}
+.logoutbtn{
+    background-color: #bf1e2e;
+    color: white;
+}
+.productbtn{
+    background-color: rgb(190, 149, 45);
+    color: white;
+}
+.tableheading{
+    background-color:cornflowerblue;
+    text-align: center;
+}
+th:hover{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

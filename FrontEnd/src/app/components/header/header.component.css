@@ -1,0 +1,47 @@
+.headerclass{
+    background-color: aliceblue;
+}
+.header-title{
+    margin-top: 20px;
+    top: 40px;
+    left:25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 64px;
+    color: #232a94;
+}
+.btnMain{
+    font-size: 20px;
+}
+.btnMain:hover{
+    color: #131212;
+}
+
+th{
+    color:#bf1e2e;
+}
+.loginbtn{
+    background-color: rgb(25, 158, 25);
+    color: white;
+}
+.signupbtn{
+    background-color: rgb(187, 144, 36);
+    color: white;
+}
+.prebtn{
+    background-color: rgb(187, 144, 36) ;
+}
+.registerbtn{
+    background-color: rgb(25, 158, 25);
+    color: white;
+}
+.errormsg{
+    text-align: center;
+    color: #bf1e2e;
+    font-size: medium;
+    font-weight: bolder;
+}
+.logoutbtn{
+    background-color: #bf1e2e;
+    color: white;
+}

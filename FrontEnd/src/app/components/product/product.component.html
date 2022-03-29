@@ -1,0 +1,63 @@
+<div class="table container-fluid">
+        <div class="searchbar">
+            <ul class="col-md-4">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="searchKey" [(ngModel)]="searchKey"
+                        (ngModelChange)="Search()" placeholder="Search Product" style="background-color: rgb(212, 245, 245);">
+                </div>
+                
+                <li class="navSec list-group-item d-flex justify-content-between align-items-center">
+                    <button (click)="getProducts()" id="allProducts" class="navbar-brand allbtn">All Products</button>
+                </li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle dropdownbutton" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cuisines
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a (click)="categoryChinese()" id="chinese" class="dropdown-item navbar-brand chinesebtn" >Chinese</a></li>
+                      <li><a (click)="categorySouthindian()" id="southindian" class="dropdown-item navbar-brand southindianbtn">SouthIndian</a></li>
+                      <li><a (click)="categoryNorthindian()" id="northindian" class="dropdown-item navbar-brand northindianbtn">NorthIndian</a></li>
+                      <li><a (click)="categoryPunjabi()" id="punjabi" class="dropdown-item navbar-brand punjabibtn">Punjabi</a></li>
+                    </ul>
+                  </div>
+                <!-- <li class="navSec list-group-item d-flex justify-content-between align-items-center">
+                    <a (click)="categoryChinese()" id="chinese" class="navbar-brand chinesebtn">Chinese</a>
+                </li>
+                <li class="navSec list-group-item d-flex justify-content-between align-items-center">
+                    <a (click)="categorySouthindian()" id="indian" class="navbar-brand southindianbtn">SouthIndian</a>
+                </li>
+                <li class="navSec list-group-item d-flex justify-content-between align-items-center">
+                    <a (click)="categoryNorthindian()" class="navbar-brand northindianbtn">NorthIndian</a>
+                </li>
+                <li class="navSec list-group-item d-flex justify-content-between align-items-center">
+                    <a (click)="categoryPunjabi()" class="navbar-brand punjabibtn">Punjabi</a>
+                </li> -->
+            </ul>
+    </div>
+</div>
+
+<div class="frontpage">
+    <div class="row">
+        <ng-container *ngFor="let item of products">
+            <div class="card col-md-3 flex-column g-4" style="width: 0.5cm;">
+                <img class = "image" src="{{item.imagepath}}" alt="Image not found">
+                <h2>{{item.name}} </h2>
+                <p>{{item.desc}}</p>
+                <p><strong>Price: </strong>₹{{item.actualPrice}}
+                    <span *ngIf="item.discount>0" style="color: rgb(233, 57, 57);">({{item.discount}}% Discount)</span>
+                </p>
+                <div *ngIf="item.discount>0">
+                    <p><strong>After Discount : </strong>₹{{item.price}}</p>
+                </div>
+                <div *ngIf="item.discount==0">
+                    <p></p>
+                    <br>
+                </div>
+                <button *ngIf="login==0" class="align-self-end mt-auto btn addcart btn-primary"
+                    (click)="showToLogin()">Add to Cart</button>
+                <button *ngIf="login==1" class="align-self-end mt-auto btn addcart btn-primary"
+                    (click)="addToCart(item)" id="addToCart">Add to Cart</button>
+            </div>&nbsp;
+        </ng-container>
+    </div>
+</div>

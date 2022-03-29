@@ -1,0 +1,90 @@
+.logo{
+    position:relative;
+    top: 8px;
+    height: 40px;
+    width: 52px;
+    cursor: pointer;
+}
+.header-title{
+    position: relative;
+    top: 8px;
+    left:25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 32px;
+    color: #bf1e2e;
+}
+
+.active, .bthHead:hover{
+    color: #020202;
+}
+
+hr{
+    margin: 0;
+}
+.prodLogo{
+    position: relative;
+    top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.AddProd{
+    margin: 10px;
+}
+
+.makeCenter{
+    text-align: center;
+}
+
+.form-check-input{
+    margin-top: 3px;
+}
+ul{
+    color: black;
+}
+p{
+    color: red;
+}
+
+.modal-title{
+    font-size: 18px;
+}
+
+
+th:hover{
+    text-align: center;
+    color: black;
+    text-decoration: solid;
+    font-size:medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+td{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.tableheading{
+    background-color:cornflowerblue;
+    text-align: center;
+}
+.logoutbtn{
+    background-color: #bf1e2e;
+    color: white;
+    margin-left: 10px;
+}
+.mprodbtn{
+    background-color: rgb(190, 149, 45);
+    color: white;
+    margin-left: 10px;
+}
+.muserbtn{
+    background-color: rgb(190, 149, 45);
+    color: white;
+    margin-left: 10px;
+}
+.purchasebtn{
+    background-color: rgb(190, 149, 45);
+    color: white;
+    margin-left: 10px;
+}
